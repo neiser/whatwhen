@@ -5,13 +5,16 @@
     <button @click="addItem(0)">Jetzt</button>
     <button @click="addItem(5*60)">5min</button>
     <button @click="addItem(30*60)">30min</button>
-    <button @click="addItem(60*60)">1h</button>
-    <button @click="addItem(60*60)">2h</button>
-    <button @click="addItem(60*60)">3h</button>
+    <button @click="addItem(1*60*60)">1h</button>
+    <button @click="addItem(2*60*60)">2h</button>
+    <button @click="addItem(3*60*60)">3h</button>
     <button @click="addItem(4*60*60)">4h</button>
-    <button @click="addItem(4*60*60)">8h</button>
-    <button @click="addItem(4*60*60)">12h</button>
-    <button @click="addItem(4*60*60)">24h</button>
+    <button @click="addItem(5*60*60)">5h</button>
+    <button @click="addItem(6*60*60)">6h</button>
+    <button @click="addItem(7*60*60)">7h</button>
+    <button @click="addItem(8*60*60)">8h</button>
+    <button @click="addItem(12*60*60)">12h</button>
+    <button @click="addItem(24*60*60)">24h</button>
     <ul>
       <li v-for="item in items" v-bind:key="item.id">
         <button @click="removeItem(item)">X</button>
